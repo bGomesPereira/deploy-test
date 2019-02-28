@@ -18,4 +18,5 @@ hooks:
       timeout: 180
   AfterInstall:
     - location: codedeploy/after_install.sh
+      runas: centos
       timeout: 180
