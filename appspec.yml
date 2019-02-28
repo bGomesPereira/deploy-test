@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/test-deploy
+    destination: /var/www/html/test-deploy
     overwrite: true
 permissions:
-  - object: /var/www/test-deploy/codedeploy
+  - object: /var/www/html/test-deploy/codedeploy
     pattern: "*.sh"
     owner: root
     group: root
