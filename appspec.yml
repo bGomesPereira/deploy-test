@@ -3,3 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/test-deploy
+hooks:
+  BeforeInstall:
+    - location: codedeploy/before_install.sh
+      timeout: 180
