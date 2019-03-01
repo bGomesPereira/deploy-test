@@ -4,19 +4,3 @@ files:
   - source: /
     destination: /var/www/html/test-deploy
     overwrite: true
-permissions:
-  - object: /var/www/html/test-deploy/codedeploy
-    pattern: "*.sh"
-    owner: root
-    group: root
-    mode: 755
-    type:
-      - file
-hooks:
-  BeforeInstall:
-    - location: codedeploy/before_install.sh
-      timeout: 180
-  AfterInstall:
-    - location: codedeploy/after_install.sh
-      runas: centos
-      timeout: 180
