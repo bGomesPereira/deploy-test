@@ -4,5 +4,6 @@
 HOME="/home/centos"
 export COMPOSER_HOME="/home/centos/.config/composer";
 cd /var/www/test-deploy
+pwd
 ls
-composer install
+composer install -d /var/www/html/test-deploy
